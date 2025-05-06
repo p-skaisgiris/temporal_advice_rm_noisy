@@ -1,19 +1,21 @@
 # # Manually control an agent using keyboard inputs. You can use this to test an environment.
-# # Taken from https://github.com/Farama-Foundation/Minigrid/blob/master/minigrid/manual_control.py 
+# # Taken from https://github.com/Farama-Foundation/Minigrid/blob/master/minigrid/manual_control.py
 
 #!/usr/bin/env python3
 
 from __future__ import annotations
 
+import envs
+
+# import envs.minigrid.kitchen, envs.minigrid.traffic
+import envs.minigrid.rocksample
 import gymnasium as gym
 import pygame
 from gymnasium import Env
-
 from minigrid.core.actions import Actions
 from minigrid.wrappers import ImgObsWrapper, RGBImgPartialObsWrapper
-import envs.minigrid.kitchen, envs.minigrid.traffic
 from utils.env import make_env
-import envs
+
 
 class ManualControl:
     def __init__(
@@ -40,7 +42,9 @@ class ManualControl:
 
     def step(self, action: Actions):
         _, reward, terminated, truncated, _ = self.env.step(action)
-        print(f"step={self.env.step_count}, reward={reward:.2f}, events={self.env.get_events()}")
+        print(
+            f"step={self.env.step_count}, reward={reward:.2f}, events={self.env.get_events()}"
+        )
 
         if terminated:
             print("terminated!")
@@ -71,12 +75,16 @@ class ManualControl:
             "right": Actions.right,
             "up": Actions.forward,
             "space": Actions.toggle,
-            "pageup": Actions.pickup,
-            "pagedown": Actions.drop,
+            "page up": Actions.pickup,
+            "page down": Actions.drop,
             "tab": Actions.pickup,
             "left shift": Actions.drop,
             "enter": Actions.done,
         }
+        # Assume there are at most 10 rocks
+        for i in range(1, 11):
+            key_to_action[f"{i}"] = i + 6
+
         if key in key_to_action.keys():
             action = key_to_action[key]
             self.step(action)
@@ -111,7 +119,7 @@ if __name__ == "__main__":
 
     env = make_env(
         args.env_id,
-        'oracle',
+        "oracle",
         tile_size=32,
         render_mode="human",
         agent_pov=args.agent_view,
