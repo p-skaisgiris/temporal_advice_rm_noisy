@@ -1,0 +1,116 @@
+U 1 | F 000100 | FPS 0279 | D 0 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 1.0 0.0 1 1 | H 1.060 | V 0.034 | pL 0.013 | vL 0.018 | ∇ 0.228 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 2 | F 000200 | FPS 0285 | D 0 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 1.0 0.0 1 1 | H 1.070 | V 0.076 | pL -0.015 | vL 0.010 | ∇ 0.200 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 3 | F 000300 | FPS 0291 | D 1 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 1.0 0.0 1 1 | H 1.062 | V -0.038 | pL 0.034 | vL 0.008 | ∇ 0.401 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 4 | F 000400 | FPS 0296 | D 1 | rR:μσmM -0.30 0.00 -0.30 -0.30 | ARPS: -0.001 | ADR: -0.005 | F:μσmM 400.0 0.0 400.0 400.0 | H 1.067 | V -0.016 | pL 0.036 | vL 0.005 | ∇ 0.112 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 5 | F 000500 | FPS 0292 | D 1 | rR:μσmM -0.30 0.00 -0.30 -0.30 | ARPS: -0.001 | ADR: -0.005 | F:μσmM 400.0 0.0 400.0 400.0 | H 1.056 | V 0.015 | pL -0.060 | vL 0.009 | ∇ 0.346 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 6 | F 000600 | FPS 0282 | D 2 | rR:μσmM -0.05 0.00 -0.05 -0.05 | ARPS: -0.000 | ADR: -0.012 | F:μσmM 147.0 0.0 147.0 147.0 | H 1.058 | V 0.005 | pL 0.030 | vL 0.005 | ∇ 0.228 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 7 | F 000700 | FPS 0287 | D 2 | rR:μσmM -0.05 0.00 -0.05 -0.05 | ARPS: -0.000 | ADR: -0.012 | F:μσmM 147.0 0.0 147.0 147.0 | H 1.064 | V -0.003 | pL 0.010 | vL 0.004 | ∇ 0.085 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 8 | F 000800 | FPS 0210 | D 2 | rR:μσmM -0.05 0.00 -0.05 -0.05 | ARPS: -0.000 | ADR: -0.012 | F:μσmM 147.0 0.0 147.0 147.0 | H 1.066 | V 0.017 | pL -0.013 | vL 0.005 | ∇ 0.141 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 9 | F 000900 | FPS 0185 | D 3 | rR:μσmM -0.05 0.00 -0.05 -0.05 | ARPS: -0.000 | ADR: -0.012 | F:μσmM 147.0 0.0 147.0 147.0 | H 1.069 | V -0.067 | pL 0.033 | vL 0.004 | ∇ 0.287 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 10 | F 001000 | FPS 0201 | D 3 | rR:μσmM -0.40 0.00 -0.40 -0.40 | ARPS: -0.001 | ADR: -0.007 | F:μσmM 400.0 0.0 400.0 400.0 | H 1.076 | V -0.006 | pL -0.022 | vL 0.002 | ∇ 0.182 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 11 | F 001100 | FPS 0205 | D 4 | rR:μσmM -0.40 0.00 -0.40 -0.40 | ARPS: -0.001 | ADR: -0.007 | F:μσmM 400.0 0.0 400.0 400.0 | H 1.059 | V -0.009 | pL -0.007 | vL 0.002 | ∇ 0.037 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 12 | F 001200 | FPS 0234 | D 4 | rR:μσmM -0.40 0.00 -0.40 -0.40 | ARPS: -0.001 | ADR: -0.007 | F:μσmM 400.0 0.0 400.0 400.0 | H 1.045 | V -0.009 | pL 0.002 | vL 0.002 | ∇ 0.048 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 13 | F 001300 | FPS 0173 | D 5 | rR:μσmM -0.40 0.00 -0.40 -0.40 | ARPS: -0.001 | ADR: -0.007 | F:μσmM 400.0 0.0 400.0 400.0 | H 1.052 | V 0.021 | pL -0.004 | vL 0.001 | ∇ 0.062 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 14 | F 001400 | FPS 0179 | D 6 | rR:μσmM -0.10 0.00 -0.10 -0.10 | ARPS: -0.000 | ADR: -0.002 | F:μσmM 400.0 0.0 400.0 400.0 | H 1.049 | V -0.008 | pL 0.011 | vL 0.001 | ∇ 0.062 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 15 | F 001500 | FPS 0185 | D 6 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 148.0 0.0 148.0 148.0 | H 1.043 | V -0.004 | pL -0.006 | vL 0.001 | ∇ 0.070 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 16 | F 001600 | FPS 0288 | D 6 | rR:μσmM -0.05 0.00 -0.05 -0.05 | ARPS: -0.001 | ADR: -0.028 | F:μσmM 59.0 0.0 59.0 59.0 | H 1.028 | V 0.010 | pL -0.010 | vL 0.002 | ∇ 0.066 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 17 | F 001700 | FPS 0257 | D 7 | rR:μσmM -0.05 0.00 -0.05 -0.05 | ARPS: -0.001 | ADR: -0.028 | F:μσmM 59.0 0.0 59.0 59.0 | H 1.035 | V -0.006 | pL 0.005 | vL 0.001 | ∇ 0.060 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 18 | F 001800 | FPS 0283 | D 7 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 86.0 66.0 20.0 152.0 | H 1.037 | V -0.019 | pL 0.007 | vL 0.001 | ∇ 0.050 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 19 | F 001900 | FPS 0286 | D 8 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 20.0 0.0 20.0 20.0 | H 1.034 | V -0.045 | pL 0.014 | vL 0.001 | ∇ 0.104 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 20 | F 002000 | FPS 0251 | D 8 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 20.0 0.0 20.0 20.0 | H 1.029 | V -0.003 | pL -0.009 | vL 0.001 | ∇ 0.066 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+Status saved
+
+U 121 | F 012100 | FPS 0287 | D 48 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 63.0 0.0 63.0 63.0 | H 0.870 | V 0.026 | pL 0.002 | vL 0.001 | ∇ 0.043 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 122 | F 012200 | FPS 0302 | D 48 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 63.0 0.0 63.0 63.0 | H 0.832 | V 0.008 | pL 0.009 | vL 0.001 | ∇ 0.056 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 123 | F 012300 | FPS 0273 | D 48 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 104.3 131.3 10.0 290.0 | H 0.900 | V 0.000 | pL -0.001 | vL 0.000 | ∇ 0.027 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 124 | F 012400 | FPS 0309 | D 49 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 84.0 0.0 84.0 84.0 | H 0.957 | V -0.016 | pL -0.002 | vL 0.000 | ∇ 0.028 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 125 | F 012500 | FPS 0358 | D 49 | rR:μσmM 1.00 0.00 1.00 1.00 | ARPS: 0.014 | ADR: 0.485 | F:μσmM 73.0 0.0 73.0 73.0 | H 0.852 | V 0.235 | pL -0.181 | vL 0.076 | ∇ 0.677 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 126 | F 012600 | FPS 0301 | D 49 | rR:μσmM 0.20 0.40 0.00 1.00 | ARPS: 0.011 | ADR: 0.169 | F:μσmM 25.6 16.5 10.0 57.0 | H 0.809 | V 0.165 | pL 0.050 | vL 0.060 | ∇ 0.210 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 127 | F 012700 | FPS 0275 | D 50 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 48.5 0.5 48.0 49.0 | H 0.913 | V 0.063 | pL 0.036 | vL 0.013 | ∇ 0.255 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 128 | F 012800 | FPS 0317 | D 50 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 65.0 0.0 65.0 65.0 | H 0.960 | V 0.018 | pL 0.040 | vL 0.004 | ∇ 0.119 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 129 | F 012900 | FPS 0318 | D 50 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 71.0 0.0 71.0 71.0 | H 0.995 | V 0.001 | pL 0.011 | vL 0.001 | ∇ 0.078 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 130 | F 013000 | FPS 0268 | D 51 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 93.0 0.0 93.0 93.0 | H 0.934 | V -0.055 | pL 0.001 | vL 0.002 | ∇ 0.091 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 131 | F 013100 | FPS 0312 | D 51 | rR:μσmM -0.05 0.00 -0.05 -0.05 | ARPS: -0.000 | ADR: -0.012 | F:μσmM 145.0 0.0 145.0 145.0 | H 0.943 | V 0.001 | pL -0.012 | vL 0.002 | ∇ 0.067 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 132 | F 013200 | FPS 0315 | D 51 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 73.0 13.0 60.0 86.0 | H 0.920 | V 0.013 | pL 0.007 | vL 0.001 | ∇ 0.043 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 133 | F 013300 | FPS 0282 | D 52 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 51.0 0.0 51.0 51.0 | H 0.970 | V -0.010 | pL 0.007 | vL 0.002 | ∇ 0.076 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 134 | F 013400 | FPS 0323 | D 52 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 51.0 0.0 51.0 51.0 | H 0.959 | V -0.032 | pL 0.006 | vL 0.000 | ∇ 0.027 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 135 | F 013500 | FPS 0317 | D 52 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 104.5 71.5 33.0 176.0 | H 0.921 | V -0.010 | pL -0.010 | vL 0.001 | ∇ 0.024 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 136 | F 013600 | FPS 0270 | D 53 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 97.0 0.0 97.0 97.0 | H 0.919 | V -0.023 | pL 0.017 | vL 0.001 | ∇ 0.025 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 137 | F 013700 | FPS 0316 | D 53 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 97.0 0.0 97.0 97.0 | H 0.853 | V -0.126 | pL 0.047 | vL 0.003 | ∇ 0.138 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 138 | F 013800 | FPS 0306 | D 53 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 97.0 0.0 97.0 97.0 | H 0.855 | V -0.124 | pL -0.007 | vL 0.001 | ∇ 0.049 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 139 | F 013900 | FPS 0292 | D 54 | rR:μσmM 0.15 0.21 0.00 0.45 | ARPS: 0.001 | ADR: 0.009 | F:μσmM 100.0 127.3 9.0 280.0 | H 0.756 | V 0.154 | pL -0.207 | vL 0.094 | ∇ 0.710 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+U 140 | F 014000 | FPS 0306 | D 54 | rR:μσmM 0.00 0.00 0.00 0.00 | ARPS: 0.000 | ADR: 0.000 | F:μσmM 49.0 0.0 49.0 49.0 | H 0.707 | V 0.132 | pL 0.045 | vL 0.002 | ∇ 0.088 | dLtrain 0.000 | dLtest 0.000 | dtop1Acctrain 0.000 | dtop1Acctest 0.000
+Status saved
+
+TRAIN AGENT
+
+
+ACModel(
+  (env_model): MinigridEnvModel(
+    (image_conv): Sequential(
+      (0): Linear(in_features=147, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=64, out_features=64, bias=True)
+    )
+  )
+  (actor): PolicyNetwork(
+    (enc_): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=64, out_features=128, bias=True)
+        (1): ReLU()
+      )
+      (1): Sequential(
+        (0): Linear(in_features=128, out_features=128, bias=True)
+        (1): ReLU()
+      )
+    )
+    (discrete_): Sequential(
+      (0): Linear(in_features=128, out_features=3, bias=True)
+    )
+  )
+  (critic): Sequential(
+    (0): Linear(in_features=64, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=128, out_features=128, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+
+VISUALIZER
+
+ACModel(
+  (env_model): MinigridEnvModel(
+    (image_conv): Sequential(
+      (0): Linear(in_features=147, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=64, out_features=64, bias=True)
+    )
+  )
+  (actor): PolicyNetwork(
+    (enc_): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+      (1): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (discrete_): Sequential(
+      (0): Linear(in_features=64, out_features=3, bias=True)
+    )
+  )
+  (critic): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=64, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=64, out_features=1, bias=True)
+  )
+)

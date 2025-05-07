@@ -1,14 +1,24 @@
 import torch
-from torch_ac.belief import threshold_rm_beliefs
 import torch.nn.functional as F
 import utils
-from model import ACModel, RecurrentACModel
 from detector_model import getDetectorModel
+from model import ACModel, RecurrentACModel
+from torch_ac.belief import threshold_rm_beliefs
+
 
 class Agent:
-    def __init__(self, env, obs_space, action_space, model_dir,
-                rm_update_algo, hidden_size=128, use_mem=False, use_mem_detector=False,
-                device=None):
+    def __init__(
+        self,
+        env,
+        obs_space,
+        action_space,
+        model_dir,
+        rm_update_algo,
+        hidden_size=128,
+        use_mem=False,
+        use_mem_detector=False,
+        device=None,
+    ):
         try:
             print(model_dir)
             status = utils.get_status(model_dir)
@@ -18,19 +28,32 @@ class Agent:
         self.env = env
         self.rm_update_algo = rm_update_algo
         self.use_mem = use_mem
-        self.use_rm_belief = (rm_update_algo in ["tdm", "naive", "ibu"]) 
+        self.use_rm_belief = rm_update_algo in ["tdm", "naive", "ibu"]
+        self.rm_belief = None
 
-        obs_space, self.preprocess_obss = utils.get_obss_preprocessor(env)  
+        obs_space, self.preprocess_obss = utils.get_obss_preprocessor(env)
 
-        self.detectormodel = getDetectorModel(env, obs_space, rm_update_algo, use_mem_detector)
+        self.detectormodel = getDetectorModel(
+            env, obs_space, rm_update_algo, use_mem_detector
+        )
         if use_mem_detector:
-            self.detector_memories = torch.zeros(1, self.detectormodel.memory_size, device=device)
+            self.detector_memories = torch.zeros(
+                1, self.detectormodel.memory_size, device=device
+            )
 
         if use_mem:
-            acmodel = RecurrentACModel(env, obs_space, env.action_space, rm_update_algo, hidden_size=hidden_size)
+            acmodel = RecurrentACModel(
+                env,
+                obs_space,
+                env.action_space,
+                rm_update_algo,
+                hidden_size=hidden_size,
+            )
             self.memories = torch.zeros(1, acmodel.memory_size, device=device)
         else:
-            acmodel = ACModel(env, obs_space, env.action_space, rm_update_algo, hidden_size=hidden_size)
+            acmodel = ACModel(
+                env, obs_space, env.action_space, rm_update_algo, hidden_size
+            )
 
         self.acmodel = acmodel
         print(acmodel)
@@ -52,29 +75,41 @@ class Agent:
             # Generate a detector belief
             if self.rm_update_algo in ["tdm", "naive", "ibu"]:
                 if self.detectormodel.recurrent:
-                    detector_belief, self.detector_memories = self.detectormodel(preprocessed_obs, self.detector_memories)
+                    detector_belief, self.detector_memories = self.detectormodel(
+                        preprocessed_obs, self.detector_memories
+                    )
                 else:
                     detector_belief = self.detectormodel(preprocessed_obs)
-            
+
             if self.rm_update_algo == "tdm":
                 detector_belief = F.softmax(detector_belief)
 
             if self.rm_update_algo == "naive":
-                detector_belief = self.env.update_rm_beliefs((detector_belief > 0).cpu().numpy()[0, :])  # diff from collect_experience()
-                detector_belief = torch.tensor(detector_belief, device=self.device, dtype=torch.float).unsqueeze(0)
+                detector_belief = self.env.update_rm_beliefs(
+                    (detector_belief > 0).cpu().numpy()[0, :]
+                )  # diff from collect_experience()
+                detector_belief = torch.tensor(
+                    detector_belief, device=self.device, dtype=torch.float
+                ).unsqueeze(0)
 
             if self.rm_update_algo == "ibu":
-                detector_belief = self.env.update_rm_beliefs(detector_belief.cpu().numpy()[0, :])  # diff from collect_experience()
-                detector_belief = torch.tensor(detector_belief, device=self.device, dtype=torch.float).unsqueeze(0)
+                detector_belief = self.env.update_rm_beliefs(
+                    detector_belief.cpu().numpy()[0, :]
+                )  # diff from collect_experience()
+                detector_belief = torch.tensor(
+                    detector_belief, device=self.device, dtype=torch.float
+                ).unsqueeze(0)
 
             ## If necessary, add rm_belief to the observation
             if self.rm_update_algo in ["tdm", "naive", "ibu"]:
                 preprocessed_obs.rm_belief = detector_belief
                 self.rm_belief = detector_belief.squeeze()
-                
+
             # Get policy action
             if self.acmodel.recurrent:
-                dist, value, self.memories = self.acmodel(preprocessed_obs, self.memories)
+                dist, value, self.memories = self.acmodel(
+                    preprocessed_obs, self.memories
+                )
             else:
                 dist, value = self.acmodel(preprocessed_obs)
 
@@ -92,6 +127,6 @@ class Agent:
         belief_str = []
         if self.rm_update_algo in ["tdm", "ibu", "naive"]:
             for k in self.rm_belief:
-                belief_str.append("%.2f"%(k))
+                belief_str.append("%.2f" % (k))
 
         return "[" + ", ".join(belief_str) + "]"
