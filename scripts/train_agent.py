@@ -222,9 +222,6 @@ else:
         envs[0], obs_space, envs[0].action_space, args.rm_update_algo, args.hidden_size
     )
 
-print(acmodel)
-sys.exit(1)
-
 # Load actor-critic model from checkpoint if it exists
 if "model_state" in status:
     acmodel.load_state_dict(status["model_state"])
