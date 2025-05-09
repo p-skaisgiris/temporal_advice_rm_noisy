@@ -116,6 +116,11 @@ parser.add_argument(
 
 ## Parameters for training the detector
 parser.add_argument(
+    "--detector-model",
+    type=str,
+    help="the pretrained detector model to load from dir",
+)
+parser.add_argument(
     "--detector-epochs",
     type=int,
     default=4,
@@ -152,7 +157,8 @@ date = datetime.datetime.now().strftime("%y-%m-%d-%H-%M-%S")
 name = args.rm_update_algo
 recurrent = "-r" if use_mem else ""
 default_model_name = f"{name}{recurrent}-{args.env}-seed{args.seed}"
-pretrained_model_name = f"{name}-{args.env}-pretrained"
+# pretrained_model_name = f"{args.env}_{name}_pretrain_seed{args.seed}"
+pretrained_model_name = args.detector_model
 model_name = default_model_name
 storage_dir = "storage"
 model_dir = utils.get_model_dir(model_name, storage_dir)
@@ -240,9 +246,9 @@ elif args.rm_update_algo not in ["oracle", "no_rm"]:
         if "model_state" in pretrain_detector_status:
             detectormodel.load_state_dict(pretrain_detector_status["model_state"])
             txt_logger.info("Loading detector model from pretraining run.\n")
-    except OSError:
-        pass
-
+    except OSError as e:
+        print("Cannot load pretrained detector model:")
+        print(e)
 acmodel.to(device)
 txt_logger.info("AC Model loaded.\n")
 txt_logger.info("{}\n".format(acmodel))
