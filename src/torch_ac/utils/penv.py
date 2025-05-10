@@ -1,5 +1,7 @@
-from multiprocessing import Process, Pipe
+from multiprocessing import Pipe, Process
+
 import gymnasium
+
 
 def worker(conn, env):
     while True:
@@ -7,7 +9,7 @@ def worker(conn, env):
         if cmd == "step":
             obs, reward, terminated, truncated, info = env.step(data)
             if terminated or truncated:
-                obs = env.reset()
+                obs, _ = env.reset()
             conn.send((obs, reward, terminated, truncated, info))
         elif cmd == "reset":
             obs, _ = env.reset()
@@ -19,6 +21,7 @@ def worker(conn, env):
             return
         else:
             raise NotImplementedError
+
 
 class ParallelEnv(gymnasium.Env):
     """A concurrent execution of environments in multiple processes."""
@@ -55,13 +58,18 @@ class ParallelEnv(gymnasium.Env):
         obs, reward, terminated, truncated, info = self.envs[0].step(actions[0])
         if terminated or truncated:
             obs, _ = self.envs[0].reset()
-        results = zip(*[(obs, reward, terminated, truncated, info)] + [local.recv() for local in self.locals])
+        results = zip(
+            *[(obs, reward, terminated, truncated, info)]
+            + [local.recv() for local in self.locals]
+        )
         return results
 
     def update_rm_beliefs(self, event_preds):
         for local, eps in zip(self.locals, event_preds[1:]):
             local.send(("update_rm_beliefs", eps))
-        results = [self.envs[0].update_rm_beliefs(event_preds[0])] + [local.recv() for local in self.locals]
+        results = [self.envs[0].update_rm_beliefs(event_preds[0])] + [
+            local.recv() for local in self.locals
+        ]
         return results
 
     def render(self):
